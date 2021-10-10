@@ -1,0 +1,24 @@
+# PATH additions
+PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/opt/local/bin
+PATH=$PATH:/opt/local/sbin
+PATH=$PATH:/bin
+PATH=$PATH:~/.cargo/bin
+PATH=$PATH:~/.composer/vendor/bin
+
+# Mac OS Specific
+if which brew 1>/dev/null 2>&1; then
+    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+    PATH=$PATH:/usr/local/opt/curl/bin
+    PATH=$PATH:/usr/local/opt/gnu-sed/libexec/gnubin
+    PATH=$PATH:/usr/local/opt/inetutils/libexec/gnubin
+    PATH=$PATH:/usr/local/opt/php@7.3/bin
+    PATH=$PATH:/usr/local/opt/python@3.10/bin
+    PATH=$PATH:/usr/local/opt/python@3.7/bin
+    PATH=$PATH:/usr/local/opt/python@3.8/bin
+    PATH=$PATH:/usr/local/opt/python@3.9/bin
+fi
+
+export PATH

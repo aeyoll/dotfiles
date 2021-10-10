@@ -5,7 +5,17 @@ vars = [ "vars.toml" ]
 
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+
+# Git
 gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
 gitconfig-kaizen = { source = "git/gitconfig-kaizen", target = ".gitconfig-kaizen" }
 gitattributes = { source = "git/gitattributes", target = ".gitattributes" }
 gitignore = { source = "git/gitignore", target = ".gitignore" }
+
+# Zsh
+zsh = { source = "zsh/zshrc", target = ".zshrc" }
+zsh_env = { source = "zsh/zshenv", target = ".zshenv" }
+zsh_aliases = { source = "zsh/aliases", target = ".aliases" }
+zsh_exports = { source = "zsh/exports", target = ".exports" }
+zsh_functions = { source = "zsh/functions", target = ".functions" }
+zsh_path = { source = "zsh/path", target = ".path" }
