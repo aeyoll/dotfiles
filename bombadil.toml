@@ -25,3 +25,6 @@ starship = { source = "starship/starship.toml", target = ".config/starhip.toml" 
 
 # Dir Colors (Nord theme)
 dir_colors = { source = "dir_colors/dir_colors", target = "dir_colors" }
+
+# Tmux
+tmux = { source = "tmux/tmux.conf", target = ".tmux.conf" }
