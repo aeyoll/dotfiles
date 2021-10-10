@@ -19,3 +19,5 @@ zsh_aliases = { source = "zsh/aliases", target = ".aliases" }
 zsh_exports = { source = "zsh/exports", target = ".exports" }
 zsh_functions = { source = "zsh/functions", target = ".functions" }
 zsh_path = { source = "zsh/path", target = ".path" }
+# Dir Colors (Nord theme)
+dir_colors = { source = "dir_colors/dir_colors", target = "dir_colors" }
