@@ -1,4 +1,11 @@
 dotfiles_dir = "dotfiles"
 
+[settings]
+vars = [ "vars.toml" ]
+
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
+gitconfig-kaizen = { source = "git/gitconfig-kaizen", target = ".gitconfig-kaizen" }
+gitattributes = { source = "git/gitattributes", target = ".gitattributes" }
+gitignore = { source = "git/gitignore", target = ".gitignore" }
