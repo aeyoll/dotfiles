@@ -42,6 +42,6 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Completion
-fpath=(~/.zfunc $fpath)
+fpath=(~/dotfiles/zsh/completions $fpath)
 autoload -Uz compinit
 compinit
