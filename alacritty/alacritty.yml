@@ -1,0 +1,116 @@
+---
+alt_send_esc: false
+env:
+ TERM: xterm-256color
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: true
+  dynamic_title: true
+  startup_mode: Maximized
+scrolling:
+  history: 10000
+  multiplier: 3
+font:
+  normal:
+    family: FiraMono Nerd Font
+    style: Medium
+  bold:
+    family: FiraMono Nerd Font
+    style: Bold
+  italic:
+    family: FiraMono Nerd Font
+    style: Italic
+  size: 12
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+debug.render_timer: false
+debud.persistent_logging: false
+draw_bold_text_with_bright_colors: true
+
+
+background_opacity: 1
+mouse_bindings:
+  - mouse: Middle
+    action: PasteSelection
+mouse:
+  double_click:
+    threshold: 300
+  triple_click:
+    threshold: 300
+  hide_when_typing: false
+  hints:
+    modifiers: None
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  save_to_clipboard: false
+cursor:
+  style: Block
+  unfocused_hollow: true
+live_config_reload: true
+shell:
+  program: /bin/zsh
+
+# Project:    Nord Alacritty
+# Version:    0.1.0
+# Repository: https://github.com/arcticicestudio/nord-alacritty
+# License:    MIT
+# References:
+#   https://github.com/alacritty/alacritty
+colors:
+  primary:
+    background: '#2e3440'
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
+  bright:
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
+  dim:
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
+

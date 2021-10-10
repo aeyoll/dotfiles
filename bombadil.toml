@@ -1,1 +1,4 @@
 dotfiles_dir = "dotfiles"
+
+[settings.dots]
+alacritty = { source = "alacritty", target = ".config/alacritty" }
