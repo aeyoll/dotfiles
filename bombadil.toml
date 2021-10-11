@@ -2,7 +2,7 @@ dotfiles_dir = "dotfiles"
 
 [settings]
 vars = [ "vars.toml" ]
-prehooks = ["install.sh"]
+prehooks = ["./install.sh"]
 
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
@@ -29,3 +29,6 @@ dir_colors = { source = "dir_colors/dir_colors", target = "dir_colors" }
 
 # Tmux
 tmux = { source = "tmux/tmux.conf", target = ".tmux.conf" }
+
+# Vim
+vim = { source = "vim/vimrc", target = ".vimrc" }
