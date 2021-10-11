@@ -45,3 +45,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 fpath=(~/dotfiles/zsh/completions $fpath)
 autoload -Uz compinit
 compinit
+
+# ctrl+w: delete a word
+custom-backward-delete-word() {
+    local WORDCHARS=${WORDCHARS/\//}
+    zle backward-delete-word
+}
+zle -N custom-backward-delete-word
+bindkey '^W' custom-backward-delete-word
