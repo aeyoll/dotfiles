@@ -135,19 +135,19 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'liuchengxu/eleline.vim'
-Plug 'preservim/nerdtree'
-Plug 'https://github.com/airblade/vim-gitgutter.git'
-Plug 'https://github.com/Raimondi/delimitMate.git'
-Plug 'https://github.com/RRethy/vim-illuminate.git'
-Plug 'rust-lang/rust.vim'
-Plug 'arcticicestudio/nord-vim'
+    Plug 'liuchengxu/eleline.vim'
+    Plug 'preservim/nerdtree'
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'https://github.com/airblade/vim-gitgutter.git'
+    Plug 'https://github.com/Raimondi/delimitMate.git'
+    Plug 'https://github.com/RRethy/vim-illuminate.git'
+
+    " Languages
+    Plug 'rust-lang/rust.vim'
+
+    " Theme
+    Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Colors
 colorscheme nord
-
-" Gitgutter
-let g:gitgutter_sign_added = ''
-let g:gitgutter_sign_removed = ''
-let g:gitgutter_sign_modified = ''
