@@ -136,7 +136,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
-" plugins
+" Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'liuchengxu/eleline.vim'
 Plug 'preservim/nerdtree'
@@ -144,4 +144,8 @@ Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/Raimondi/delimitMate.git'
 Plug 'https://github.com/RRethy/vim-illuminate.git'
 Plug 'rust-lang/rust.vim'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
+
+" Colors
+colorscheme nord
