@@ -93,5 +93,6 @@ bindkey "\e[3~" delete-char
 
 # Completion
 fpath=(~/dotfiles/zsh/completions $fpath)
+fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
