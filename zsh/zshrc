@@ -41,11 +41,6 @@ eval "$(starship init zsh)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-# Completion
-fpath=(~/dotfiles/zsh/completions $fpath)
-autoload -Uz compinit
-compinit
-
 # ctrl+w: delete a word
 custom-backward-delete-word() {
     local WORDCHARS=${WORDCHARS/\//}
@@ -57,9 +52,12 @@ bindkey '^W' custom-backward-delete-word
 # zplug
 # https://github.com/zplug/zplug
 source ~/.zplug/init.zsh
-zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search"
+
+source ~/.zplug/repos/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zplug/repos/zsh-users/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Keybinding
 # Additional keybindings
@@ -71,8 +69,8 @@ bindkey "^[[5~" up-line-or-history
 bindkey "^[[6~" down-line-or-history
 
 # make search up and down work, so partially type and hit up/down to find relevant stuff
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 bindkey "^[[H" beginning-of-line
 bindkey "^[[1~" beginning-of-line
@@ -92,3 +90,8 @@ bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
 bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
+
+# Completion
+fpath=(~/dotfiles/zsh/completions $fpath)
+autoload -Uz compinit
+compinit
