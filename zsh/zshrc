@@ -75,9 +75,8 @@ zplug "modules/git", from:prezto
 zplug "modules/history", from:prezto
 zplug "modules/spectrum", from:prezto
 zplug "modules/rsync", from:prezto
-zplug "modules/autosuggestions", from:prezto
+# zplug "modules/autosuggestions", from:prezto
 zplug "modules/syntax-highlighting", from:prezto, defer:2
-zplug "modules/history-substring-search", from:prezto
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
