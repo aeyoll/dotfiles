@@ -53,3 +53,10 @@ custom-backward-delete-word() {
 }
 zle -N custom-backward-delete-word
 bindkey '^W' custom-backward-delete-word
+
+# zplug
+# https://github.com/zplug/zplug
+source ~/.zplug/init.zsh
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2

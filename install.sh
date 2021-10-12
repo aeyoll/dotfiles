@@ -12,7 +12,6 @@ if ! command -v starship &> /dev/null ; then
     sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 fi
 
-
 # Vim
 if ! [ -d ~/.vim/backups ] ; then
     mkdir -p ~/.vim/backups
@@ -35,4 +34,10 @@ fi
 if ! [ -f ~/.vim/autoload/plug.vim ] ; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+# zplug
+# https://github.com/zplug/zplug
+if ! [ -d ~/.zplug ] ; then
+    git clone https://github.com/zplug/zplug ~/.zplug
 fi
