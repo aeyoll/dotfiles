@@ -51,7 +51,33 @@ bindkey '^W' custom-backward-delete-word
 
 # zplug
 # https://github.com/zplug/zplug
+
+### Workaround for https://github.com/zplug/zplug/issues/397
+COMPINIT_ARGS=
+if [ "${UID}" = 0 ] && [ -n "${SUDO_UID}" ] ; then
+    if ! grep -q COMPINIT_ARGS ~/.zplug/base/core/load.zsh ; then
+        sed -i -r 's/^(\s+)compinit -d/\1compinit $COMPINIT_ARGS -d/' ~/.zplug/base/core/load.zsh
+    fi
+    COMPINIT_ARGS="-u"
+fi
+export COMPINIT_ARGS
+###
+
 source ~/.zplug/init.zsh
+zplug "modules/archive", from:prezto
+zplug "modules/completion", from:prezto
+zplug "modules/directory", from:prezto
+zplug "modules/dpkg", from:prezto
+zplug "modules/editor", from:prezto
+zplug "modules/environment", from:prezto
+zplug "modules/terminal", from:prezto, defer:2
+zplug "modules/git", from:prezto
+zplug "modules/history", from:prezto
+zplug "modules/spectrum", from:prezto
+zplug "modules/rsync", from:prezto
+zplug "modules/autosuggestions", from:prezto
+zplug "modules/syntax-highlighting", from:prezto, defer:2
+zplug "modules/history-substring-search", from:prezto
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
