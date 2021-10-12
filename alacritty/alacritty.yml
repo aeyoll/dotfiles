@@ -25,7 +25,7 @@ font:
   italic:
     family: FiraMono Nerd Font
     style: Italic
-  size: 10
+  size: __[window_font_size]__
   offset:
     x: 0
     y: 0

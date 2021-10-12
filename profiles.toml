@@ -1,0 +1,5 @@
+[profiles.linux]
+vars = [ "bombadil/profiles/linux.toml" ]
+
+[profiles.macos]
+vars = [ "bombadil/profiles/macos.toml" ]

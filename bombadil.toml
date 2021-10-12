@@ -4,6 +4,9 @@ dotfiles_dir = "dotfiles"
 vars = [ "vars.toml" ]
 prehooks = ["./install.sh"]
 
+[[import]]
+path = "profiles.toml"
+
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
 
