@@ -19,3 +19,9 @@ export LC_SSH_EMAIL="***REMOVED***"
 
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+# LANG settings
+export LANG=fr_FR.UTF-8
+export LANGUAGE=fr_FR.UTF-8
+export LC_ALL=fr_FR.UTF-8
+export LC_MESSAGES=en_US.UTF-8
