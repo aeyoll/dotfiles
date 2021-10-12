@@ -101,11 +101,11 @@ set smartindent
 set cindent
 
 "tabs and spaces settings
-" set expandtab "tab are spaces
-set tabstop=4
-set shiftwidth=4
-set shiftround "round indent to shiftwidth
-set softtabstop=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set softtabstop=2
 
 "search settings
 set hlsearch "highlight searches
@@ -135,15 +135,18 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-sensible'
+
     Plug 'liuchengxu/eleline.vim'
     Plug 'preservim/nerdtree'
     Plug 'editorconfig/editorconfig-vim'
-    Plug 'https://github.com/airblade/vim-gitgutter.git'
-    Plug 'https://github.com/Raimondi/delimitMate.git'
-    Plug 'https://github.com/RRethy/vim-illuminate.git'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'Raimondi/delimitMate'
+    Plug 'RRethy/vim-illuminate'
 
     " Languages
     Plug 'rust-lang/rust.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Theme
     Plug 'arcticicestudio/nord-vim'
