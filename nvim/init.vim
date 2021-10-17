@@ -146,7 +146,10 @@ call plug#begin('~/.vim/plugged')
 
     " Languages
     Plug 'rust-lang/rust.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    " LSP
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/lsp-status.nvim'
 
     " Theme
     Plug 'arcticicestudio/nord-vim'
@@ -163,3 +166,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <C-n> :NERDTreeToggle<CR>
+
+lua << EOF
+  require'lspconfig'.rust_analyzer.setup{}
+EOF
