@@ -1,7 +1,7 @@
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 for file in ~/.{path,exports,aliases,functions}; do
-	[ -r "$file" ] && source "$file"
+    [ -r "$file" ] && source "$file"
 done
 unset file
 
@@ -9,9 +9,9 @@ unset file
 platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
-	platform='linux'
+    platform='linux'
 elif [[ "$unamestr" == 'Darwin' ]]; then
-	platform='macos'
+    platform='macos'
 fi
 
 # rbenv
@@ -19,8 +19,8 @@ fi
 # your development environment matches production.
 # https://github.com/rbenv/rbenv
 if [ -d ~/.rbenv/bin ] ; then
-	export PATH="$HOME/.rbenv/bin":$PATH
-	rbenv() {
+    export PATH="$HOME/.rbenv/bin":$PATH
+    rbenv() {
         eval "$(command rbenv init -)"
         rbenv "$@"
     }
@@ -28,7 +28,7 @@ fi
 
 # dircolors
 if [ -f ~/.dir_colors ] ; then
-	eval `dircolors ~/.dir_colors`
+    eval `dircolors ~/.dir_colors`
 fi
 
 export TERM=xterm-256color
