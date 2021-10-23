@@ -23,6 +23,7 @@ zsh_aliases = { source = "zsh/aliases", target = ".aliases" }
 zsh_exports = { source = "zsh/exports", target = ".exports" }
 zsh_functions = { source = "zsh/functions", target = ".functions" }
 zsh_path = { source = "zsh/path", target = ".path" }
+zsh_plugins = { source = "zsh/zsh_plugins.txt", target = ".zsh_plugins.txt" }
 
 # Sharship
 starship = { source = "starship/starship.toml", target = ".config/starship.toml" }

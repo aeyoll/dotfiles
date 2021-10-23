@@ -183,3 +183,6 @@ web () {
 rweb () {
  	$(rweb_cmd "${1}")
 }
+
+pmodload () {
+}

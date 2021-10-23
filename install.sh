@@ -47,3 +47,5 @@ fi
 if ! [ -d ~/.zplug ] ; then
     git clone https://github.com/zplug/zplug ~/.zplug
 fi
+
+# antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh

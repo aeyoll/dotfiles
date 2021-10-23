@@ -1,0 +1,17 @@
+sorin-ionescu/prezto path:modules/helper
+sorin-ionescu/prezto path:modules/archive
+sorin-ionescu/prezto path:modules/completion
+sorin-ionescu/prezto path:modules/directory
+sorin-ionescu/prezto path:modules/dpkg
+sorin-ionescu/prezto path:modules/editor
+sorin-ionescu/prezto path:modules/environment
+sorin-ionescu/prezto path:modules/terminal
+sorin-ionescu/prezto path:modules/git
+sorin-ionescu/prezto path:modules/history
+sorin-ionescu/prezto path:modules/spectrum
+sorin-ionescu/prezto path:modules/rsync
+sorin-ionescu/prezto path:modules/syntax-highlighting
+
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
