@@ -37,3 +37,6 @@ tmux = { source = "tmux/tmux.conf", target = ".tmux.conf" }
 # Vim
 vim = { source = "vim/vimrc", target = ".vimrc" }
 nvim = { source = "nvim", target = ".config/nvim" }
+
+# Helix
+helix = { source = "helix", target = ".config/helix"}
