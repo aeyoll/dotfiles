@@ -52,20 +52,6 @@ custom-backward-delete-word() {
 zle -N custom-backward-delete-word
 bindkey '^W' custom-backward-delete-word
 
-# zplug
-# https://github.com/zplug/zplug
-
-### Workaround for https://github.com/zplug/zplug/issues/397
-COMPINIT_ARGS=
-if [ "${UID}" = 0 ] && [ -n "${SUDO_UID}" ] ; then
-    if ! grep -q COMPINIT_ARGS ~/.zplug/base/core/load.zsh ; then
-        sed -i -r 's/^(\s+)compinit -d/\1compinit $COMPINIT_ARGS -d/' ~/.zplug/base/core/load.zsh
-    fi
-    COMPINIT_ARGS="-u"
-fi
-export COMPINIT_ARGS
-###
-
 # Antibody
 source ~/.zsh_plugins.sh
 
@@ -103,6 +89,5 @@ bindkey "\e[3~" delete-char
 
 # Completion
 fpath=(~/dotfiles/zsh/completions $fpath)
-fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
