@@ -143,6 +143,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'Raimondi/delimitMate'
     Plug 'RRethy/vim-illuminate'
+    Plug 'machakann/vim-sandwich'
+    Plug 'tpope/vim-surround'
 
     " Languages
     Plug 'rust-lang/rust.vim'
