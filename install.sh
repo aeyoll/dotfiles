@@ -8,8 +8,8 @@ fi
 
 # Starship
 # https://starship.rs
-if ! command -v starship &> /dev/null ; then
-    sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+if ! [ -x "$(command -v starship)" ]; then
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)"  -- -y
 fi
 
 # Vim
