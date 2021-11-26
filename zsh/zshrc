@@ -26,6 +26,9 @@ if [ -d ~/.rbenv/bin ] ; then
     }
 fi
 
+# pyenv
+eval "$(pyenv init -)"
+
 # dircolors
 if [ -f ~/.dir_colors ] ; then
     eval `dircolors ~/.dir_colors`
