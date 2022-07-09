@@ -1,7 +1,7 @@
 
 [user]
-    name = __[user_name]__
-    email = __[user_email]__
+    name = {{user_name}}
+    email = {{user_email}}
 
 [includeIf "gitdir:~/Kaizen/"]
     path = .gitconfig-kaizen

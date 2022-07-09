@@ -23,7 +23,7 @@ font:
   italic:
     family: FiraMono Nerd Font
     style: Italic
-  size: __[window_font_size]__
+  size: {{window_font_size}}
   offset:
     x: 0
     y: 0
