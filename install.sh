@@ -42,10 +42,4 @@ if ! [ -f "${XDG_DATA_HOME:-HOME/.local/share}"/nvim/site/autoload/plug.vim ] ; 
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 
-# zplug
-# https://github.com/zplug/zplug
-if ! [ -d ~/.zplug ] ; then
-    git clone https://github.com/zplug/zplug ~/.zplug
-fi
-
 # antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
