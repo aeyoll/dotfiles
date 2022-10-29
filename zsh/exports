@@ -28,3 +28,6 @@ export LC_MESSAGES=en_US.UTF-8
 
 # Bat theme
 export BAT_THEME="Nord"
+
+# GPG
+export GPG_TTY=$(tty)
