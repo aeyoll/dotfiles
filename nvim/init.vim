@@ -145,6 +145,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'RRethy/vim-illuminate'
     Plug 'machakann/vim-sandwich'
     Plug 'tpope/vim-surround'
+    Plug 'williamboman/mason.nvim'
 
     " Languages
     Plug 'rust-lang/rust.vim'
@@ -174,6 +175,11 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <C-n> :NERDTreeToggle<CR>
+
+" Mason
+lua << EOF
+  require("mason").setup()
+EOF
 
 " LSP
 lua << EOF
