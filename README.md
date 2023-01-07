@@ -38,7 +38,11 @@ About Zsh
 About Neovim
 ---
 
-- Plugins are managed by vim-plug
-- To install plugins, type `:PlugInstall`
-- LSP is managed by mason.nvim
-- To install LSPs: `:MasonInstall`
+- Plugins are managed by [https://github.com/wbthomason/packer.nvim](packer.nvim)
+
+### Used plugins:
+
+- Telescope
+
+,ff => Search file in directory
+,fb => Grep in directory
