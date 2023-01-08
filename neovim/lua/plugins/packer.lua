@@ -42,10 +42,11 @@ return require('packer').startup(function(use)
   }
 
   -- Lsp
-  use 'neovim/nvim-lspconfig'
-  use 'williamboman/mason.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'jayp0521/mason-null-ls.nvim'
+  use {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
+  }
   use 'nvim-lua/lsp-status.nvim'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -53,7 +54,6 @@ return require('packer').startup(function(use)
 
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
-
 
   if packer_bootstrap then
     require('packer').sync()
