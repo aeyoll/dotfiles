@@ -1,12 +1,15 @@
 -- Setup Mason
 require('mason').setup()
 require('mason-lspconfig').setup {
-  ensure_installed = { 'rust_analyzer', 'intelephense', 'ruff_lsp', 'tsserver' },
+  ensure_installed = { 'rust_analyzer', 'intelephense', 'ruff_lsp', 'tsserver', 'pyright' },
   automatic_installation = true,
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+require('lspconfig').pyright.setup {
+  capabilities = capabilities
+}
 require('lspconfig').tsserver.setup {
   capabilities = capabilities
 }
