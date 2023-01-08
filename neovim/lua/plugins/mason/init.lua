@@ -21,6 +21,7 @@ require('lspconfig').ruff_lsp.setup {
 local null_ls = require('null-ls')
 
 local sources = {
+  null_ls.builtins.formatting.rustfmt,
   null_ls.builtins.formatting.isort.with({
     extra_args = { '--multi-line', 'VERTICAL_HANGING_INDENT' }
   }),
