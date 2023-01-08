@@ -34,6 +34,8 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
   }
 
+  use 'gpanders/editorconfig.nvim'
+
   -- Highly extendable fuzzy finder over lists (https://github.com/nvim-telescope/telescope.nvim)
   use 'nvim-lua/plenary.nvim'
   use {
