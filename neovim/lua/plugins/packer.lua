@@ -43,6 +43,12 @@ return require('packer').startup(function(use)
     tag = '0.1.0'
   }
 
+  -- A super powerful autopair plugin for Neovim that supports multiple characters.
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+
   -- Lsp
   use {
     'williamboman/mason.nvim',
