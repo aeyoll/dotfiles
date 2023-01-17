@@ -8,6 +8,7 @@ PATH=$PATH:/bin
 PATH=$PATH:~/.cargo/bin
 PATH=$PATH:~/.composer/vendor/bin
 PATH=$PATH:~/.pyenv/bin
+PATH=$PATH:~/.pyenv/shims
 PATH=$PATH:~/.local/bin
 
 # Mac OS Specific
