@@ -1,5 +1,5 @@
 sorin-ionescu/prezto path:modules/helper
-sorin-ionescu/prezto path:modules/archive
+# sorin-ionescu/prezto path:modules/archive
 sorin-ionescu/prezto path:modules/completion
 sorin-ionescu/prezto path:modules/directory
 sorin-ionescu/prezto path:modules/dpkg
