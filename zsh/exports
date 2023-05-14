@@ -31,3 +31,6 @@ export BAT_THEME="Nord"
 
 # GPG
 export GPG_TTY=$(tty)
+
+# GEM
+export GEM_HOME="$HOME/.gem"
