@@ -97,6 +97,7 @@ bindkey ' ' magic-space    # also do history expansion on space
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+bindkey "\e." insert-last-word
 
 bindkey '^[[Z' reverse-menu-complete
 
