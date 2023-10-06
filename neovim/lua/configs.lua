@@ -31,7 +31,7 @@ vim.cmd('colorscheme nord')
 
 -- Treesitter Plugin Setup
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { 'lua', 'vim', 'php', 'rust', 'toml' },
+  ensure_installed = { 'lua', 'vim', 'php', 'rust', 'toml', 'vue', 'css', 'scss' },
   auto_install = true,
   highlight = {
     enable = true,
