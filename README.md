@@ -33,7 +33,7 @@ About Tmux
 About Zsh
 ---
 
-- Plugins are managed by Antibody
+- Plugins are managed by Antidote
 
 About Neovim
 ---
