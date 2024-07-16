@@ -43,6 +43,19 @@ About Neovim
 ---
 
 - Plugins are managed by [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- Leader key is set to `,`
+
+### Keybindings
+
+- ,k => Move to previous tab
+- ,j => Move to next tab
+- ,t => Create new tab
+- ,h => Split window horizontally
+- ,v => Split window vertically
+- ,J => Move focus to the bottom of the current window
+- ,K => Move focus to the top of the current window
+- ,H => Move focus to the far left of the current window
+- ,L => Move focus to the far right of the current window
 
 ### Used plugins:
 
@@ -50,5 +63,18 @@ About Neovim
 
 This plugin allows you to toggle terminals in Neovim.
 
-- \ + t => Toggle base terminal
-- \ + g => Toggle lazygit
+- F12 => Toggle terminal
+- ,g => Toggle lazygit
+
+#### [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+
+A file explorer tree for Neovim.
+
+- ,n => Toggle nvim-tree
+
+#### [telescope](https://github.com/nvim-telescope/telescope.nvim)
+
+A highly extendable fuzzy finder over lists.
+
+- ,ff => Search file in directory
+- ,fb => Search files in buffer

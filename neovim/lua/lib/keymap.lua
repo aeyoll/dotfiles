@@ -55,7 +55,7 @@ function M.tmap(lhs, rhs, opts)
     if opts then options = vim.tbl_extend('force', options, opts) end
     api.nvim_set_keymap('t', lhs, rhs, options)
 end
-  
+
 function M.map(lhs, rhs, opts)
     local options = { noremap = true, silent = true }
     if opts then options = vim.tbl_extend('force', options, opts) end
@@ -111,4 +111,3 @@ function M.tnoremap(lhs, rhs, opts)
 end
 
 return M
-
