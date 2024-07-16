@@ -1,13 +1,15 @@
-require("toggleterm").setup()
-
-local Terminal  = require('toggleterm.terminal').Terminal
-local lazygit = Terminal:new({
-  cmd = "lazygit",
-  dir = "git_dir",
+require("toggleterm").setup{
   direction = "float",
   float_opts = {
     border = "double",
   },
+}
+
+local Terminal  = require('toggleterm.terminal').Terminal
+
+local lazygit = Terminal:new({
+  cmd = "lazygit",
+  dir = "git_dir",
   -- function to run on opening the terminal
   on_open = function(term)
     vim.cmd("startinsert!")
@@ -23,5 +25,5 @@ function _lazygit_toggle()
   lazygit:toggle()
 end
 
--- Toggle lazygit (\ + g)
+-- Toggle lazygit (, + g)
 vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})

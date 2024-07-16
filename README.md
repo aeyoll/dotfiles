@@ -46,7 +46,9 @@ About Neovim
 
 ### Used plugins:
 
-- Telescope
+#### [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 
-,ff => Search file in directory
-,fb => Grep in directory
+This plugin allows you to toggle terminals in Neovim.
+
+- \ + t => Toggle base terminal
+- \ + g => Toggle lazygit
