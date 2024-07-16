@@ -16,9 +16,15 @@ return require('packer').startup(function(use)
   -- Status line (https://github.com/nvim-lualine/lualine.nvim)
   use 'nvim-lualine/lualine.nvim'
 
-  -- A Vim plugin which shows a git diff in the
-  -- sign column (https://github.com/airblade/vim-gitgutter)
-  use 'airblade/vim-gitgutter'
+  -- Git signs (https://github.com/lewis6991/gitsigns.nvim)
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- Need to provide branch explicitly, see: https://github.com/wbthomason/packer.nvim/issues/86
+    branch = "main",
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+  }
 
   -- File explorer (https://github.com/nvim-tree/nvim-tree.lua)
   use 'kyazdani42/nvim-tree.lua'
