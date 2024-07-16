@@ -54,6 +54,8 @@
     # Use custom `.gitignore` and `.gitattributes`
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
+    fsmonitor = true
+    untrackedCache = true
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
