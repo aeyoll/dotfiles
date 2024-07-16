@@ -33,7 +33,6 @@ About Tmux
 
 - Plugins are managed by tpm
 
-
 About Zsh
 ---
 
@@ -78,3 +77,10 @@ A highly extendable fuzzy finder over lists.
 
 - ,ff => Search file in directory
 - ,fb => Search files in buffer
+
+Debug zsh:
+---
+
+```sh
+time ZSH_DEBUGRC=1 zsh -i -c exit
+```
