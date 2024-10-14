@@ -34,3 +34,6 @@ export GPG_TTY=$(tty)
 
 # GEM
 export GEM_HOME="$HOME/.gem"
+
+# Node
+export COREPACK_ENABLE_AUTO_PIN=0
