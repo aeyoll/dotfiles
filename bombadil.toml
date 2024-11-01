@@ -43,4 +43,7 @@ vim = { source = "vim/vimrc", target = ".vimrc" }
 nvim = { source = "neovim", target = ".config/nvim" }
 
 # Helix
-helix = { source = "helix", target = ".config/helix"}
+helix = { source = "helix", target = ".config/helix" }
+
+# Zellij
+zellij = { source = "zellij", target = ".config/zellij" }
