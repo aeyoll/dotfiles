@@ -12,24 +12,7 @@ PATH=$PATH:~/.pyenv/shims
 PATH=$PATH:~/.local/bin
 PATH=$PATH:~/.volta/bin
 PATH=$PATH:~/.moon/bin
-
-# Mac OS Specific
-if which brew 1>/dev/null 2>&1; then
-    PATH=$PATH:/usr/local/opt/ruby/bin
-    PATH=$PATH:/usr/local/opt/coreutils/libexec/gnubin
-    PATH=$PATH:/usr/local/opt/curl/bin
-    PATH=$PATH:/usr/local/opt/gnu-sed/libexec/gnubin
-    PATH=$PATH:/usr/local/opt/inetutils/libexec/gnubin
-    PATH=$PATH:/usr/local/opt/php@7.3/bin
-    PATH=$PATH:/usr/local/opt/php@7.4/bin
-    PATH=$PATH:/usr/local/opt/php@8.2/bin
-    PATH=$PATH:/usr/local/opt/php@8.3/bin
-    PATH=$PATH:/usr/local/opt/python@3.7/bin
-    PATH=$PATH:/usr/local/opt/python@3.8/bin
-    PATH=$PATH:/usr/local/opt/python@3.9/bin
-    PATH=$PATH:/usr/local/opt/python@3.10/bin
-    PATH=$PATH:/usr/local/opt/python@3.11/bin
-    PATH=$PATH:/usr/local/opt/python@3.12/bin
-fi
+PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
 
 export PATH
