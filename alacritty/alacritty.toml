@@ -133,9 +133,6 @@ multiplier = 3
 save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[terminal.shell]
-program = "/bin/zsh"
-
 [window]
 dynamic_padding = true
 dynamic_title = true
@@ -149,7 +146,4 @@ lines = 0
 [window.padding]
 x = 5
 y = 5
-
-[general]
-live_config_reload = true
 
