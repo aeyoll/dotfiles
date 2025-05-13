@@ -135,8 +135,3 @@ fi;
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
-
-# proto
-export PROTO_HOME="$HOME/.proto";
-export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH";
-
