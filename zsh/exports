@@ -37,3 +37,4 @@ export GEM_HOME="$HOME/.gem"
 
 # Node
 export COREPACK_ENABLE_AUTO_PIN=0
+export NODE_OPTIONS=--max-old-space-size=4096
