@@ -20,36 +20,6 @@ require('lspconfig').intelephense.setup {
   capabilities = capabilities
 }
 
--- Setup null-ls for formatting
-local null_ls = require('null-ls')
-
-local sources = {
-  null_ls.builtins.formatting.rustfmt,
-  null_ls.builtins.formatting.isort.with({
-    extra_args = { '--multi-line', 'VERTICAL_HANGING_INDENT' }
-  }),
-}
-
-local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
-
-null_ls.setup({
-  sources = sources,
-
-  -- Allow to format file on save
-  on_attach = function(client, bufnr)
-    if client.supports_method('textDocument/formatting') then
-      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-      vim.api.nvim_create_autocmd('BufWritePre', {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format({ bufnr = bufnr })
-        end,
-      })
-    end
-  end,
-})
-
 -- Setup nvim-cmp for completion.
 local cmp = require 'cmp'
 cmp.setup {
