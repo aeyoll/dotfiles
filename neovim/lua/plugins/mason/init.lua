@@ -7,18 +7,10 @@ require('mason-lspconfig').setup {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig').pyright.setup {
-  capabilities = capabilities
-}
-require('lspconfig').ts_ls.setup {
-  capabilities = capabilities
-}
-require('lspconfig').rust_analyzer.setup {
-  capabilities = capabilities
-}
-require('lspconfig').intelephense.setup {
-  capabilities = capabilities
-}
+vim.lsp.enable('pyright')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('intelephense')
 
 -- Setup nvim-cmp for completion.
 local cmp = require 'cmp'
