@@ -48,11 +48,8 @@ export TERM=xterm-256color
 # https://starship.rs/
 eval "$(starship init zsh)"
 
-# Volta
-# The Hassle-Free JavaScript Tool Manager
-# https://volta.sh/
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# Mise
+eval "$(~/.local/bin/mise activate zsh)"
 
 # ctrl+w: delete a word
 custom-backward-delete-word() {

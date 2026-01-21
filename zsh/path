@@ -10,7 +10,6 @@ PATH=$PATH:~/.composer/vendor/bin
 PATH=$PATH:~/.pyenv/bin
 PATH=$PATH:~/.pyenv/shims
 PATH=$PATH:~/.local/bin
-PATH=$PATH:~/.volta/bin
 PATH=$PATH:~/.moon/bin
 PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
