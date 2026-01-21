@@ -48,4 +48,7 @@ if ! [ -d ~/.antidote ] ; then
 fi
 
 # pnpm
-pnpm setup
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+# mise
+curl https://mise.run | sh
