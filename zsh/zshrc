@@ -49,7 +49,7 @@ export TERM=xterm-256color
 eval "$(starship init zsh)"
 
 # Mise
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # ctrl+w: delete a word
 custom-backward-delete-word() {
