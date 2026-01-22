@@ -46,10 +46,14 @@ export TERM=xterm-256color
 # Starship
 # The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 # https://starship.rs/
-eval "$(starship init zsh)"
+if command -v starship &> /dev/null; then
+  eval "$(starship init zsh)"
+fi
 
 # Mise
-eval "$(mise activate zsh)"
+if [ -z "$CURSOR_AGENT" ] && command -v mise &> /dev/null; then
+  eval "$(mise activate zsh)"
+fi
 
 # ctrl+w: delete a word
 custom-backward-delete-word() {
