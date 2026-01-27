@@ -11,11 +11,14 @@ PATH=$PATH:~/.pyenv/bin
 PATH=$PATH:~/.pyenv/shims
 PATH=$PATH:~/.local/bin
 PATH=$PATH:~/.moon/bin
-PATH=$PATH:/opt/homebrew/bin
-PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
-PATH=$PATH:/opt/homebrew/opt/curl/bin
 PATH=$PATH:~/.local/share/pnpm
-PATH=$PATH:~/Library/pnpm
 PATH=$PATH:~/.bun/bin
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  PATH=$PATH:/opt/homebrew/bin
+  PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
+  PATH=$PATH:/opt/homebrew/opt/curl/bin
+  PATH=$PATH:~/Library/pnpm
+fi
 
 export PATH
