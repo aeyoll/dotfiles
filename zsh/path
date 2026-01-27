@@ -16,5 +16,6 @@ PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
 PATH=$PATH:/opt/homebrew/opt/curl/bin
 PATH=$PATH:~/.local/share/pnpm
 PATH=$PATH:~/Library/pnpm
+PATH=$PATH:~/.bun/bin
 
 export PATH
