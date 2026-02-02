@@ -195,3 +195,14 @@ yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+uv-upgrade() {
+  deps=$(sed -n '/^\s*dependencies\s*=\s*\[/,/^\s*]/p' pyproject.toml | \
+    =grep -vE '^\s*dependencies\s*=\s*\[|^\s*\]' | \
+    sed -E 's/[",]//g' | \
+    sed -E 's/[<>=!~].*//' | \
+    =grep -vE '^\s*$' | \
+    xargs)
+
+  bash -c "uv remove $deps && uv add $deps"
+}
