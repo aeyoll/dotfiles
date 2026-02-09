@@ -38,3 +38,8 @@ export GEM_HOME="$HOME/.gem"
 # Node
 export COREPACK_ENABLE_AUTO_PIN=0
 export NODE_OPTIONS=--max-old-space-size=4096
+
+# fcitx5 + Mozc (japanese)
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
