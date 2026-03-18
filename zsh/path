@@ -13,6 +13,7 @@ PATH=$PATH:~/.local/bin
 PATH=$PATH:~/.moon/bin
 PATH=$PATH:~/.local/share/pnpm
 PATH=$PATH:~/.bun/bin
+PATH=$PATH:~/.config/composer/vendor/bin
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   PATH=$PATH:/opt/homebrew/bin
