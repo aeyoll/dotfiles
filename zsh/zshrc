@@ -70,6 +70,12 @@ zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins.zsh
 # Ensure you have a .zsh_plugins.txt file where you can add plugins.
 [[ -f ${zsh_plugins:r}.txt ]] || touch ${zsh_plugins:r}.txt
 
+# Custom completions must be on fpath before prezto's compinit runs.
+fpath=(~/dotfiles/zsh/completions $fpath)
+# Dead Intel Homebrew completion symlinks slow compinit on Apple Silicon.
+[[ -x /opt/homebrew/bin/brew ]] && fpath=(${fpath:#/usr/local/share/zsh/site-functions})
+fpath=(${^fpath}(N))
+
 # Lazy-load antidote.
 fpath+=(${ZDOTDIR:-~}/.antidote)
 autoload -Uz $fpath[-1]/antidote
@@ -115,23 +121,7 @@ bindkey "^[[3~" delete-char
 bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
 
-# Completion
-# On slow systems, checking the cached .zcompdump file to see if it must be
-# regenerated adds a noticable delay to zsh startup.  This little hack restricts
-# it to once a day. It should be pasted into your own completion file.
-#
-# The globbing is a little complicated here:
-# - '#q' is an explicit glob qualifier that makes globbing work within zsh's [[ ]] construct.
-# - 'N' makes the glob pattern evaluate to nothing when it doesn't match (rather than throw a globbing error)
-# - '.' matches "regular files"
-# - 'mh+24' matches files (or directories or whatever) that are older than 24 hours.
-fpath=(~/dotfiles/zsh/completions $fpath)
-autoload -Uz compinit
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi;
+# Completion: prezto's completion module runs compinit (see zsh_plugins.txt).
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
