@@ -19,6 +19,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   PATH=$PATH:/opt/homebrew/bin
   PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
   PATH=$PATH:/opt/homebrew/opt/curl/bin
+  PATH=$PATH:/opt/homebrew/opt/gnu-sed/libexec/gnubin
   PATH=$PATH:~/Library/pnpm
 fi
 

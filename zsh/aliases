@@ -126,7 +126,8 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias ssh_kaizen="ssh -A -p 63453 jean-philippe@94.228.179.219"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	alias curl="/usr/local/opt/curl-openssl/bin/curl"
+  alias curl="/usr/local/opt/curl-openssl/bin/curl"
+  alias sed="/opt/homebrew/opt/gnu-sed/libexec/gnubin/sed"
 fi
 
 alias grep="rg"
