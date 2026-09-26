@@ -43,3 +43,6 @@ export NODE_OPTIONS=--max-old-space-size=4096
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+
+# Codedb
+export CODEDB_NO_TELEMETRY=1
